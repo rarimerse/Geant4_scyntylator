@@ -1,0 +1,13 @@
+/process/optical/processActivation Cerenkov false
+/process/optical/processActivation Scintillation true
+
+ #Inicjalizacja Geant
+/run/initialize
+/vis/open OGL
+/vis/drawVolume
+/vis/scene/add/trajectories smooth
+/vis/scene/add/hits
+/vis/scene/endOfEventAction accumulate 20 #musi byc przed beam on#
+/vis/scene/add/hits
+/run/beamOn 1
+/vis/scene/add/axes 0 0 0 10 cm

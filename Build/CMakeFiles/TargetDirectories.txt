@@ -1,0 +1,7 @@
+/home/local1/scyntylator_projekt/Build/CMakeFiles/My.dir
+/home/local1/scyntylator_projekt/Build/CMakeFiles/edit_cache.dir
+/home/local1/scyntylator_projekt/Build/CMakeFiles/rebuild_cache.dir
+/home/local1/scyntylator_projekt/Build/CMakeFiles/list_install_components.dir
+/home/local1/scyntylator_projekt/Build/CMakeFiles/install.dir
+/home/local1/scyntylator_projekt/Build/CMakeFiles/install/local.dir
+/home/local1/scyntylator_projekt/Build/CMakeFiles/install/strip.dir

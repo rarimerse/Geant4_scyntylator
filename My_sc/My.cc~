@@ -1,0 +1,30 @@
+#include "MyDetectorConstruction.hh"
+#include "MyPhysicsList.hh"
+#include "MyPrimaryGeneratorAction.hh"
+#include "G4RunManager.hh"
+
+int main(int argc,char** argv) {
+  
+  // Run manager
+  G4RunManager * runManager = new G4RunManager;
+  
+  // Mandatory initialization classes
+  runManager->SetUserInitialization(new MyDetectorConstruction);
+  runManager->SetUserInitialization(new MyPhysicsList);
+    
+  // User action classes
+  runManager->SetUserAction(new MyPrimaryGeneratorAction());
+  
+  // Initialize G4 kernel
+  runManager->Initialize();
+    
+  // Start a run
+  G4int numberOfEvents=2;
+  runManager->BeamOn(numberOfEvents);
+ 
+  // Job termination
+  delete runManager;
+  
+  return 0;
+}
+
